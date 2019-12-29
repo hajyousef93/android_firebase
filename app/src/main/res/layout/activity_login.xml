@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.LoginView.LoginActivity"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent4"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:gravity="start"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawablePadding="10dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:hint="Email"
+        android:lines="1"
+        android:layout_centerVertical="true"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass_edit"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:hint="Password"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_below="@id/email_edit"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/login_but"
+        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pass_edit"
+        android:layout_marginTop="15dp"
+        />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/But_sign_in_Google"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/login_but"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/TV_forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/But_sign_in_Google"
+        android:text="Forget Password?"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/not_have_account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Have account? Register"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent4"
+        />
+
+
+
+
+</RelativeLayout>

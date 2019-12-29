@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.LoginView.LoginActivity"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent4"
+        android:textSize="25sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_centerVertical="true">
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:lines="1"
+        android:id="@+id/ET_userName"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:paddingStart="10dp"
+        android:drawablePadding="5dp"
+            android:layout_marginTop="15dp"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PhoneNumber"
+            android:lines="1"
+            android:id="@+id/ET_phoneNumber"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:paddingStart="10dp"
+            android:drawablePadding="5dp"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PhoneNumber"
+            android:lines="1"
+            android:id="@+id/ET_email"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:paddingStart="10dp"
+            android:drawablePadding="5dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:lines="1"
+            android:id="@+id/ET_password"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:paddingStart="10dp"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ConfermPassword"
+            android:lines="1"
+            android:id="@+id/ET_conferm_password"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:paddingStart="10dp"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+
+            />
+        <Button
+            android:id="@+id/But_register"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="25dp"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TV_AlreadyHaveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Already Have account ? Login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/colorAccent4"/>
+
+
+
+</RelativeLayout>
